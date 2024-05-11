@@ -1,0 +1,21 @@
+<header>
+  <div class="logo">
+    <p>Infinity <span>XI</span></p>
+  </div>
+  <div class="group">
+    <a class="header-link">Home</a>
+    <a class="header-link">About Us</a>
+    <% if (user) { %>
+      <div class="dropdown">
+        <ul>
+          <img src=<% userPfp %> />
+          <li><a class="headerlink">Dashboard</a></li>
+          <li><a class="header-link">Profile</a></li>
+          <li><a class="header-link">Logout</a></li>
+        </ul>
+      </div>
+    <% } else { %>
+      <a class="header-link">Login</a>
+    <% ) %>
+  </div>
+</header>
